@@ -44,7 +44,7 @@ classpath:/org/springframework/aop/config/spring-aop-3.0.xsd
          <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
        
          <property name="username" value="system" />
-		 	<property name="password" value="sar115" />
+		 	<property name="password" value="*****" />
   
      </bean>
  
@@ -56,9 +56,10 @@ classpath:/org/springframework/aop/config/spring-aop-3.0.xsd
              <!--    <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop> -->
                 <prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
                  <prop key="hibernate.current_session_context_class">thread</prop>
+               <prop key="hibernate.default_schema">admin</prop>
                  <prop key="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</prop>
-<!--                  <prop key="hibernate.show_sql">true</prop> -->
-                 <prop key="hibernate.hbm2ddl.auto">create</prop>
+                 <prop key="hibernate.show_sql">true</prop>
+                 <prop key="hibernate.hbm2ddl.auto">create-drop</prop>
              </props>
          </property>
       
