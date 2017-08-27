@@ -32,7 +32,7 @@ public class LoginController {
 	public ModelAndView signup(@ModelAttribute("userdet") org.interntask.models.UserDet userdet) {
 		Session session = sessionFactory.openSession();
 		ModelAndView model = new ModelAndView("index");
-		if (session.get(UserDet.class,userdet.getEmailid()) == null) {
+		if (session.get(UserDet.class,userdet.getEmailId()) == null) {
 			
 			session.beginTransaction();
 			session.save(userdet);
@@ -62,9 +62,9 @@ public class LoginController {
 		Session session = sessionFactory.openSession();
 		userdet = (UserDet) session.get(UserDet.class, emailid);
 		if (userdet != null) {
-					if (userdet.getPass().equals(password)) {
-							httpSession.setAttribute("SESSION_email", userdet.getEmailid());
-							httpSession.setAttribute("SESSION_name", userdet.getName());
+					if (userdet.getPassword().equals(password)) {
+							httpSession.setAttribute("SESSION_email", userdet.getEmailId());
+							httpSession.setAttribute("SESSION_name", userdet.getFirstName());
 						
 							if((String) httpSession.getAttribute("SESSION_email")!=null){
 								model = new ModelAndView("index");

@@ -50,16 +50,28 @@
                             <form  action="signup" autocomplete="on" method="post"> 
                                 <h1> Sign up </h1> 
                                 <p> 
-                                    <label for="usernamesignup" class="uname" >Your username</label>
-                                    <input id="usernamesignup" name="name" required="required" type="text" placeholder="mysuperusername690" />
+                                    <label for="usernamesignup" class="uname" >Your First Name</label>
+                                    <input id="usernamesignup" name="FirstName" required="required" type="text" placeholder="mysuperusername690" />
+                                </p>
+                                <p> 
+                                    <label for="usernamesignup" class="uname" >Your Last Name</label>
+                                    <input id="usernamesignup" name="LastName" required="required" type="text" placeholder="mysuperusername690" />
                                 </p>
                                 <p> 
                                     <label for="emailsignup" class="youmail"  > Your email</label>
-                                    <input id="emailsignup" name="Emailid" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                    <input id="emailsignup" name="EmailId" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                </p>
+                                <p> 
+                                    <label for="usernamesignup" class="uname" >Country</label>
+                                    <input id="usernamesignup" name="country" required="required" type="text" placeholder="mysuperusername690" />
+                                </p>
+                                <p> 
+                                    <label for="usernamesignup" class="uname" >Contact Number</label>
+                                    <input id="usernamesignup" name="contact" required="required" type="text" placeholder="mysuperusername690" />
                                 </p>
                                 <p> 
                                     <label for="passwordsignup" class="youpasswd" >Your password </label>
-                                    <input id="passwordsignup" name="pass" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                    <input id="passwordsignup" name="password" required="required" type="password" placeholder="eg. X8df!90EO"/>
                                 </p>
                                 <p> 
                                     <label for="passwordsignup_confirm" class="youpasswd" >Please confirm your password </label>
